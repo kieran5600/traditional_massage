@@ -1,10 +1,30 @@
 <html>
 <head>
 	<title>Traditional Massage Hundson Valley, NY</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
-<%= yield %>
+<header>
+  <div id="logo"> Logo </div>
+</header>
+
+
+<div id="nav-container">
+	<nav id="nav">
+	  <ul>
+	  	<li> <a href="/"> Home </a> </li>
+	  	<li> <a href="/about"> About </a> </li>
+	  	<li> <a href="/styles"> Styles </a> </li>
+	  	<li> <a href="/health_tips"> Health Tips </a> </li>
+	  	<li> <a href="/contact"> Contact </a> </li>
+	  </ul>	
+	</nav>
+</div>
+
+<div id="context-container"> 
+  <%= yield %>
+</div>
 
 </body>
 </html>

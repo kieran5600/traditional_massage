@@ -1,0 +1,11 @@
+body { background: gray; }
+
+#nav-container {
+  width:20%; 
+/*  float:left;*/
+}
+
+#content-container {
+  width:80%; 
+  float:left;
+}
