@@ -30,20 +30,20 @@ get '/send_email' do
   message = params[:message]
 
   Gmail.connect(username, password) do |gmail|
-    gmail.deliver do
-	  to "traditionalmassagekjp@gmail.com"
-	  subject "Hello Email"
-	  
-	  text_part do
-	    body "#{message}"
-	  end
+      gmail.deliver do
+  	  to "traditionalmassagekjp@gmail.com"
+  	  subject "Hello Email"
+  	  
+  	  text_part do
+  	    body "#{message}"
+  	  end
 
-	  html_part do
-	    content_type 'text/html; charset=UTF-8'
-	    body "<p>#{message}</p>"
-	  end
-	end
-  end
+  	  html_part do
+  	    content_type 'text/html; charset=UTF-8'
+  	    body "<p>#{message}</p>"
+  	  end
+	   end
+    end
 
   redirect("/contact")
 
