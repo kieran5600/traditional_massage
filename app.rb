@@ -28,6 +28,7 @@ get '/send_email' do
   password = "threebbb"
 
   message = params[:message]
+  
 
   Gmail.connect(username, password) do |gmail|
       gmail.deliver do
@@ -41,6 +42,7 @@ get '/send_email' do
   	  html_part do
   	    content_type 'text/html; charset=UTF-8'
   	    body "<p>#{message}</p>"
+
   	  end
 	   end
     end

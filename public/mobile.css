@@ -9,6 +9,12 @@
     	display: inline; 
     
     }
+    body
+    {
+        width:100%;
+        margin: none;
+        padding: none;
+    }
 
 	#desktop {
 		display: none;
