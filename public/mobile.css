@@ -1,14 +1,41 @@
 @media only screen and (max-width:480px) {
-    #nav {
-        float: none;
-        width: 400px;
+   
+    #nav-container li
+    {
+        display: block;
         text-align: center;
-        
+        text-decoration: underline;
+        padding: .75;
+        width: auto;
+
     }
-    #mobile{
+    #wrapper
+    {
+        text-align: left;
+        padding:.1em;
+        margin: auto;
+        width: 75%;
+    }
+    #audio_off
+    {
+        display:none;
+    }
+
+    #song_title
+    {
+        display: none;
+    }
+
+    #mobile
+    {
     	display: inline; 
-    
     }
+
+    .cloud
+    {
+        display: none;
+    }
+
     body
     {
         background: #c9dbe9;
@@ -17,19 +44,23 @@
         padding: none;
     }
 
-	#desktop {
+	#desktop 
+    {
 		display: none;
 	}
-
-    fieldset {
-    	width: 250px;
+        /*for contact information, from here down*/
+    fieldset 
+    {
+    	width: auto;
     }
-    label{
+    label
+    {
     	float: none;
-    	text-align: right;
+    	text-align: left;
     }
 
-    textarea{
+    textarea
+    {
     	max-width: 250px;
     	width: 200px;
     }

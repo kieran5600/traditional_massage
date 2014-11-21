@@ -4,6 +4,8 @@ body {
     /*overflow: hidden;*/
     /*background-color: #c9dbe9;*/
     background: #c9dbe9;
+    width:auto;
+    padding:auto;
    /* background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%); 
     background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
     background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
@@ -131,31 +133,18 @@ body {
 
 p 
 {
-    font-family: times;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
-
-/*#wrapper p
-{
-    font-size: 1.45em;
-}*/
 
 hr 
 { 
     font-size: 4em;
 }
 
-#nav
-{
-    display: block;
-    float: left;
-    text-align: right;
-    margin-left: 0em;
-    
-}
-
 #wrapper
 {  
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
     display: block;
     border-radius: 15px;
     opacity: 100%;
@@ -163,21 +152,20 @@ hr
     margin-left: auto;
     width:55%; 
     text-align: left; 
-    margin-top: 0px;
+    margin-top: .5em;
     background-color:#FFFFDB;
     padding-left: 2em;
     padding-right: 2em;
+    padding-bottom: .3em;
 }
-
-
 
 #logo 
 { 
     display: block;
     height:20em;
-    max-width:70%;
+    max-width:75%;
     margin: auto;
-    background-image: url(picture/finalHeaderPic2.jpg); 
+    background-image: url(picture/finalHeaderPic2RE2.jpg); 
     background-repeat: no-repeat;
     background-position: center; 
 }
@@ -187,17 +175,23 @@ hr
     font-size: 4em;
     font-style: italic;
     text-align: center;
-    margin-bottom: .75em; 
-    font-family:  Courier New Times New Roman;
+    /*margin-bottom: .75em; */
+    /*font-family:  Courier New Times New Roman;*/
     font-style: bold; 
 
 }
 
 h2
 {
-    font-size:2.35em;
+    text-align: center;
+    font-size: 2.35em;
     font-style: italic;
-    font-family: times Courier New; 
+    /*font-family: times Courier New; */
+}
+
+#h3_header
+{
+text-align: center;
 }
 
 h3
@@ -206,38 +200,47 @@ h3
     text-decoration: underline;
 }
 
-ul li
+ul li , #nav 
+
 {
+    text-align: center;
+    width: 45%;
     list-style-type: none;
-    display: block;
-    margin: .75em;
+    margin: .1em;
+    display: inline;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    padding-top: .1em;
+
+
 }
 
-ol li 
-{
+ol
+{   
+    margin: auto;
     font-size: 1.2em;
 }
 
 dt, dd 
 {
     font-size: 1.2em;
-    padding: .2em;
+    padding: .40em;
+    margin:auto;
 }
 
-#nav a 
+dt
 {
-    padding-bottom: 4em;
-    text-decoration: none;
-    margin:1em;
-	text-align: right;
-    font-size: 23px;
-	border-color: black;
-    text-transform: uppercase;
-    margin-bottom: 1em;
+    font-style: italic;
+    text-decoration: underline;
 }
+
 
 .info
-{
+{   
+    font-family: 'Ubuntu', sans-serif;
+    padding:.5em;
+    margin: .2em;
     text-align: center;
 }
 
@@ -246,6 +249,12 @@ span
     font-style: italic; 
     font-size: .75em; 
     text-align: left; 
+}
+
+/*this down is for contact information*/
+legend
+{   
+    display:none;
 }
 
 #mySubmit
