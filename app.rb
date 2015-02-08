@@ -1,6 +1,7 @@
 require 'sinatra'
-require 'gmail'
-require 'sinatra/reloader' if development?
+require 'rubygems'
+# require 'gmail'
+
 
 get '/' do
   erb :home 

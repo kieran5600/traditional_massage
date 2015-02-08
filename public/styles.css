@@ -189,6 +189,14 @@ h2
     /*font-family: times Courier New; */
 }
 
+.PictureForEachPage
+{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    font-style: bold;
+}
+
 #h3_header
 {
 text-align: center;
@@ -235,6 +243,10 @@ dt
     text-decoration: underline;
 }
 
+#CosTutWhite
+{
+    background-color: white;
+}
 
 .info
 {   
