@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'rubygems'
-# require 'gmail'
+require 'gmail'
 
 
 get '/' do
